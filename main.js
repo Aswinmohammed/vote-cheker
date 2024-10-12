@@ -2,7 +2,7 @@ var input = document.getElementById("age")
 var output = document.getElementById("output")
 
 function checkEligible(){
-    if (input.value === '') {
+    if (input.value === '' || isNaN(input.value)) {
         output.innerHTML =  "Invalid Number! Check Your Input"
         }
 
